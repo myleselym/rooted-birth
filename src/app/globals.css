@@ -2,26 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: Moon;
+  src: url(../assets/fonts/Moon2.0-Regular.otf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f0efee;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 5px;
+}
+
+.bg_finch {
+  background-color: #58603a;
+}
+
+.bg_porcelain {
+  background-color: #dee3e7;
+}
+
+.bg_sky {
+  background-color: #95a7ae;
+}
+
+.bg_sage {
+  background-color: #969d87;
+}
+
+.bg_pearl {
+  background-color: #f0efee;
+}
+
+.text_pearl {
+  color: #f0efee;
+}
+
+.text_sage {
+  color: #969d87;
+}
+
+.text_sky {
+  color: #95a7ae;
+}
+
+.text_porcelain {
+  color: #dee3e7;
+}
+
+.text_finch {
+  color: #58603a;
 }
