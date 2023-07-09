@@ -28,9 +28,9 @@ const Contact = () => {
               mapClicked ? "pointer-events-auto" : "pointer-events-none"
             } w-[90%] h-[90%]`}
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d267380.8145943509!2d-89.42863301557786!3d43.09747678899573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1688603927513!5m2!1sen!2sus"
-            allowfullscreen=""
+            allowFullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
       </div>

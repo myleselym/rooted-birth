@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import Balancer from "react-wrap-balancer";
 
 const Card = ({
   imgSrc,
@@ -30,7 +30,7 @@ const Card = ({
         <div
           className={`${
             title && "text-left"
-          } text-lg min-[280px]:pl-2 md:pl-4 pr-2 leading-7 mt-8`}
+          } text-lg min-[280px]:pl-2 md:pl-4 pr-2 leading-7 my-auto pt-8`}
         >
           {content}
         </div>

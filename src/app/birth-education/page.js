@@ -1,13 +1,13 @@
 import HeroSection from "@/app/components/HeroSection";
 import { Playfair_Display } from "next/font/google";
-
+import BirthEducationHeroImg from "/public/hand-hold.jpeg";
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 
 const BirthEducation = () => {
   return (
     <main>
       <HeroSection
-        imgSrc="/hand-hold.jpeg"
+        imgSrc={BirthEducationHeroImg}
         alt="Holding Hands"
         heroTitle="Birth Education"
       />
@@ -23,7 +23,7 @@ const BirthEducation = () => {
         <p className="my-2">You will learn:</p>
         <ul
           style={{ wordSpacing: ".1rem" }}
-          className={`${playfairDisplay.className} mb-4 ml-5 list-disc text-lg`}
+          className={`${playfairDisplay.className} mb-4 pl-8 list-disc text-lg`}
         >
           <li>The Stages and Hormones of Labor</li>
           <li>Advocacy Strategies</li>

@@ -3,11 +3,12 @@ import InformationSection from "@/app/components/InformationSection";
 import Link from "next/link";
 import AboutSection from "@/app/components/AboutSection";
 import TestimonialCarousel from "@/app/components/TestimonialCarousel";
+import HeroImg from "/public/rooted_header.jpg";
 
 export default function Home() {
   return (
-    <main className="">
-      <HeroSection imgSrc="/rooted_header.jpg" alt="Rooted Header" />
+    <main>
+      <HeroSection imgSrc={HeroImg} alt="Rooted Header" />
       <div className="flex flex-col flex-wrap items-center justify-center w-full gap-4 py-4 font-bold text-center bg_sky text_pearl">
         <h2 style={{ wordSpacing: "-.4rem" }} className={`text-4xl font-bold`}>
           Free 30-Minute Consultation

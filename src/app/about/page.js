@@ -11,7 +11,7 @@ const About = () => {
         heroTitle="About Me"
       />
       <div className="py-8 bg_sky text_pearl">
-        <div className="flex flex-col flex-wrap items-center justify-start gap-8 py-8 xl:flex-row xl:items-start xl:justify-center">
+        <div className="flex flex-col flex-wrap items-center justify-start gap-8 xl:flex-row xl:items-start xl:justify-center">
           <Card
             imgSrc="/bridget-pregnant-bw.jpeg"
             imgAlt="Bridget Pregnant Black and White"
@@ -56,7 +56,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="py-8 bg_pearl text_sky">
+      <div className="pt-8 bg_pearl text_sky">
         <h2 className="text-5xl text-center">Why Rooted?</h2>
         <div className="flex flex-col flex-wrap items-center justify-start gap-8 py-8 xl:flex-row xl:items-start xl:justify-center ">
           <Card

@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import Card from "./ui/Card";
+import DoulaSupportImg from "/public/doula.jpeg";
+import BirthEducationImg from "/public/baby-in-hands.jpg";
 
 const InformationSection = () => {
   return (
-    <div className="flex flex-col px-2 py-8 mb-8 text-center text_pearl bg_sky">
+    <div className="flex flex-col px-2 py-8 text-center text_pearl bg_sky">
       <div className="pb-4">
         <h2 style={{ wordSpacing: "-.9rem" }} className="pb-4 text-5xl">
           Your birth. Your way.
@@ -16,7 +18,7 @@ const InformationSection = () => {
       </div>
       <div className="flex flex-wrap items-start justify-center w-full gap-8">
         <Card
-          imgSrc="/doula.jpeg"
+          imgSrc={DoulaSupportImg}
           imgAlt="Doula Img"
           content="A birth doula is a professional trained in labor support.
                   Doulas provide informational, emotional, and physical support
@@ -26,7 +28,7 @@ const InformationSection = () => {
           buttonText="Doula Support"
         />
         <Card
-          imgSrc="/baby-in-hands.jpg"
+          imgSrc={BirthEducationImg}
           imgAlt="Baby in hands"
           content={
             <p>

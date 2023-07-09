@@ -1,4 +1,5 @@
 import HeroSection from "@/app/components/HeroSection";
+import ImageSection from "@/app/components/ImageSection";
 import {
   Accordion,
   AccordionContent,
@@ -6,8 +7,14 @@ import {
   AccordionTrigger,
 } from "@/app/components/ui/accordion";
 import { Playfair_Display } from "next/font/google";
+import DSImg1 from "/public/ds-img-1.jpeg";
+import DSImg2 from "/public/ds-img-2.jpeg";
+import DSImg3 from "/public/ds-img-3.jpeg";
+import DSImg4 from "/public/ds-img-4.jpeg";
 
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
+
+const topImgSrcs = [DSImg1, DSImg2, DSImg3, DSImg4];
 
 const DoulaSupport = () => {
   return (
@@ -17,8 +24,8 @@ const DoulaSupport = () => {
         alt="FAQ Baby Header"
         heroTitle="Doula Support"
       />
-      <section className="flex items-center justify-center text_sky">
-        <div className="w-[85vw]">
+      <section className="flex flex-col items-center justify-center text_sky">
+        <div className="w-[85vw] my-8">
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
               <AccordionTrigger
@@ -271,6 +278,11 @@ const DoulaSupport = () => {
             </AccordionItem>
           </Accordion>
         </div>
+        <ImageSection
+          imgSrcs={topImgSrcs}
+          bgColor="bg_sage"
+          position="bottom"
+        />
       </section>
     </main>
   );

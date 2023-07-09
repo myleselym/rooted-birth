@@ -314,7 +314,7 @@ const FAQ = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <p className="mt-8 text-xl text-center">
+          <p className="pb-8 mt-8 text-xl text-center">
             <span className="italic">{`"I would recommend anyone who is searching for a doula to connect with
         Bridget. She was loving and just so fun. She is amazing."`}</span>{" "}
             -Sasha F.

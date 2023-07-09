@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className="min-[280px]:hidden lg:block [&>*]:cursor-pointer">
+      <div className="min-[200px]:hidden lg:block [&>*]:cursor-pointer">
         <ul className="flex gap-4">
           <li>
             <Link href="/">Home</Link>
@@ -54,21 +54,21 @@ const Navbar = () => {
             >
               Services <BsChevronDown className="mt-2 ml-1" />
               {isServiceLinkOpen && (
-                <div className="absolute mt-[50px] -ml-6 border border-t-0 rounded-b-xl -p-2 bg_sky">
-                  <ul>
-                    <li
-                      onClick={() => setIsServiceLinkOpen(false)}
-                      className="p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
-                    >
-                      <Link href="/doula-support">Doula Support</Link>
-                    </li>
-                    <li
-                      onClick={() => setIsServiceLinkOpen(false)}
-                      className="p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
-                    >
-                      <Link href="/birth-education">Birth Education</Link>
-                    </li>
-                  </ul>
+                <div className="absolute flex flex-col mt-[50px] -ml-6 border border-t-0 rounded-b-xl -p-2 bg_sky">
+                  <Link
+                    onClick={() => setIsServiceLinkOpen(false)}
+                    className="p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
+                    href="/doula-support"
+                  >
+                    Doula Support
+                  </Link>
+                  <Link
+                    onClick={() => setIsServiceLinkOpen(false)}
+                    className="p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
+                    href="/birth-education"
+                  >
+                    Birth Education
+                  </Link>
                 </div>
               )}
             </li>
@@ -87,7 +87,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="min-[320px]:block lg:hidden">
+      <div className="min-[200px]:block lg:hidden">
         <MdMenu
           className="text-4xl border rounded-[5px]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -116,21 +116,22 @@ const Navbar = () => {
                   Services
                 </h3>
                 {isServiceLinkOpen && (
-                  <div className="">
-                    <ul className="flex">
-                      <li
-                        onClick={closeMenus}
-                        className="flex p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
-                      >
-                        <Link href="/doula-support">Doula Support</Link>
-                      </li>
-                      <li
-                        onClick={closeMenus}
-                        className="p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
-                      >
-                        <Link href="/birth-education">Birth Education</Link>
-                      </li>
-                    </ul>
+                  <div className="flex">
+                    <Link
+                      onClick={closeMenus}
+                      className="flex p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
+                      href="/doula-support"
+                    >
+                      Doula Support
+                    </Link>
+
+                    <Link
+                      onClick={closeMenus}
+                      className="flex p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
+                      href="/birth-education"
+                    >
+                      Birth Education
+                    </Link>
                   </div>
                 )}
               </li>

@@ -3,6 +3,7 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { Playfair_Display } from "next/font/google";
 import { useState } from "react";
+import { Balancer } from "react-wrap-balancer";
 
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 
@@ -48,9 +49,14 @@ const ContactForm = () => {
     <div className="flex flex-col mx-auto items-center w-full max-w-[800px] px-2 pb-8 text-center text_pearl bg_sky">
       <h2 className="text-5xl">Contact Me</h2>
       <p className="p-4 text-xl">
-        Call, text, or send a message below for a free consultation.
-        <br />
-        {`(Text is Bridget's fastest mode of comunication.)`}
+        <Balancer>
+          Call, text, or send a message below for a free consultation.
+        </Balancer>
+      </p>
+      <p className="text-lg">
+        <Balancer>
+          (Text is Bridget&apos;s fastest mode of comunication.)
+        </Balancer>
       </p>
       <div className="flex items-center gap-20 my-4 ">
         <span className="flex items-center text-2xl">
@@ -105,7 +111,7 @@ const ContactForm = () => {
           required
         />
         <button
-          className="p-4 text-xl border border-gray-500 shadow-lg disabled:bg-gray-400 disabled:text-gray-100 hover:bg-slate-100 text_sky rounded-2xl active:bg-slate-300 active:shadow-md active:border-gray-200 shadow-black/30"
+          className="p-4 text-xl border border-gray-500 shadow-lg disabled:bg-gray-400 disabled:text-gray-100 hover:bg-slate-100 text_sky rounded-2xl active:bg-slate-300 active:shadow-sm shadow-black/30"
           type="submit"
           disabled={loading}
         >
