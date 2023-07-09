@@ -12,8 +12,8 @@ const Card = ({
   buttonHref,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-[400px] min-h-[450px] text-center">
-      <div className="relative mx-auto h-[260px] w-[260px]">
+    <div className="flex flex-col p-2 items-center justify-center gap-8 max-w-[400px] min-h-[450px] text-center">
+      <div className="relative h-[260px] w-[260px]">
         <Image
           className="object-cover shadow-xl shadow-zinc-700"
           style={{
@@ -26,12 +26,8 @@ const Card = ({
         />
       </div>
       <div className="flex flex-wrap items-center justify-center">
-        {title && <h3 className="mt-8 text-3xl">{title}</h3>}
-        <div
-          className={`${
-            title && "text-left"
-          } text-lg min-[280px]:pl-2 md:pl-4 pr-2 leading-7 my-auto pt-8`}
-        >
+        {title && <h3 className="pt-8 text-3xl">{title}</h3>}
+        <div className={`${title && "text-left"} text-lg leading-7`}>
           {content}
         </div>
       </div>
