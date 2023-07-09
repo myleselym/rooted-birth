@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import Card from "./ui/Card";
 import DoulaSupportImg from "/public/doula.jpeg";
 import BirthEducationImg from "/public/baby-in-hands.jpg";
+import { Balancer } from "react-wrap-balancer";
 
 const InformationSection = () => {
   return (
@@ -16,13 +16,19 @@ const InformationSection = () => {
           Supporting all families and birth preferences in all locations.
         </p>
       </div>
-      <div className="flex flex-wrap items-start justify-center w-full gap-8">
+      <div className="relative flex flex-wrap items-stretch justify-center w-full gap-8">
         <Card
           imgSrc={DoulaSupportImg}
           imgAlt="Doula Img"
-          content="A birth doula is a professional trained in labor support.
-                  Doulas provide informational, emotional, and physical support
-                  for pregnant, birthing, and postpartum families."
+          content={
+            <p>
+              <Balancer>
+                A birth doula is a professional trained in labor support. Doulas
+                provide informational, emotional, and physical support for
+                pregnant, birthing, and postpartum families.
+              </Balancer>
+            </p>
+          }
           button={true}
           buttonHref="/doula-support"
           buttonText="Doula Support"
@@ -32,15 +38,17 @@ const InformationSection = () => {
           imgAlt="Baby in hands"
           content={
             <p>
-              Read &nbsp;
-              <a
-                href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
-                className="underline opacity-70 text_finch hover:text-blue-300 active:text-black/50"
-              >
-                this signature article
-              </a>
-              &nbsp; from Evidence Based Birth to learn more about what a doula
-              does and why they are so valuable.
+              <Balancer>
+                Read &nbsp;
+                <a
+                  href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
+                  className="underline opacity-70 text_finch hover:text-blue-300 active:text-black/50"
+                >
+                  this signature article
+                </a>
+                &nbsp; from Evidence Based Birth to learn more about what a
+                doula does and why they are so valuable.
+              </Balancer>
             </p>
           }
           button={true}
