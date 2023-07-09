@@ -15,8 +15,8 @@ export const POST = async (req, res) => {
 
   try {
     const mail = await transporter.sendMail({
-      from: "udemy.tested@gmail.com",
-      to: "udemy.tested@gmail.com",
+      from: "bridgetdoula@gmail.com",
+      to: "bridgetdoula@gmail.com",
       replyTo: email,
       subject: `Contact form submission from ${first} ${last}`,
       html: `
