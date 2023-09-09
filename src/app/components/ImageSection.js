@@ -10,7 +10,6 @@ const ImageSection = ({ imgSrcs, bgColor, position }) => {
           loading="lazy"
           key={`ds-img-${i}`}
           className="shadow-xl shadow-black/30"
-          style={{ borderRadius: "10px" }}
           src={imgSrc}
           alt={`ds-img-${i}`}
           width={300}

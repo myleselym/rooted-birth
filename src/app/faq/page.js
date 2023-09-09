@@ -21,10 +21,7 @@ const FAQ = () => {
         <div className="w-[85vw]">
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl text-left"
-              >
+              <AccordionTrigger className="text-2xl text-left moon_font ">
                 What is a doula?
               </AccordionTrigger>
               <AccordionContent className="text-lg">

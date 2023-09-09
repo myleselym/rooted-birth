@@ -4,19 +4,20 @@ import Card from "./ui/Card";
 import DoulaSupportImg from "/public/doula.jpeg";
 import BirthEducationImg from "/public/baby-in-hands.jpg";
 import { Balancer } from "react-wrap-balancer";
-
+import { Playfair_Display } from "next/font/google";
+const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 const InformationSection = () => {
   return (
     <div className="flex flex-col px-2 py-8 text-center text_pearl bg_sky">
       <div className="pb-4">
-        <h2 style={{ wordSpacing: "-.9rem" }} className="pb-4 text-5xl">
+        <h2 className="pb-4 text-5xl moon_font [word-spacing:-1rem]">
           Your birth. Your way.
         </h2>
-        <p style={{ wordSpacing: "-.4rem" }} className="mb-4 text-3xl">
+        <p className="mb-4 text-3xl">
           Supporting all families and birth preferences in all locations.
         </p>
       </div>
-      <div className="relative flex flex-wrap items-stretch justify-center w-full gap-8">
+      <div className="relative flex flex-wrap items-stretch justify-center w-full gap-10">
         <Card
           imgSrc={DoulaSupportImg}
           imgAlt="Doula Img"
@@ -37,17 +38,19 @@ const InformationSection = () => {
           imgSrc={BirthEducationImg}
           imgAlt="Baby in hands"
           content={
-            <p>
+            <p className="">
               <Balancer>
                 Read &nbsp;
-                <a
-                  href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
-                  className="underline opacity-70 text_finch hover:text-blue-300 active:text-black/50"
-                >
-                  this signature article
-                </a>
-                &nbsp; from Evidence Based Birth to learn more about what a
-                doula does and why they are so valuable.
+                <span>
+                  <a
+                    href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
+                    className={`${playfairDisplay.className} text-lg [word-spacing:.08rem] opacity-70 text_finch hover:text-neutral-100 active:text-black/50`}
+                  >
+                    this signature article
+                  </a>
+                </span>
+                &nbsp; from <br /> Evidence Based Birth <br /> to learn more
+                about what a doula does and why they are so valuable.
               </Balancer>
             </p>
           }

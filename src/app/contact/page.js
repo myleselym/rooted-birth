@@ -34,6 +34,7 @@ const Contact = () => {
           />
         </div>
       </div>
+      <div id="contact-form" className="h-[4.4rem]"></div>
     </main>
   );
 };

@@ -20,12 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      style={{
-        fontFamily: "Moon",
-      }}
-      className="fixed top-0 z-10 flex items-center justify-between w-full min-[280px]:px-5 min-[320px]:px-8 py-4 text-lg font-extrabold border-b border-b-slate-300 opacity-90 bg_sky text_pearl"
-    >
+    <nav className="moon_font fixed top-0 z-10 flex items-center justify-between w-full min-[280px]:px-5 min-[320px]:px-8 py-4 text-lg font-extrabold border-b border-b-slate-300 opacity-90 bg_sky text_pearl">
       <div className="min-[320px]:max-lg:mx-auto">
         <Link onClick={closeMenus} href="/">
           <div className="flex items-center min-[280px]:gap-2 sm:gap-4">
@@ -54,7 +49,7 @@ const Navbar = () => {
             >
               Services <BsChevronDown className="mt-2 ml-1" />
               {isServiceLinkOpen && (
-                <div className="absolute flex flex-col mt-[50px] -ml-6 border border-t-0 rounded-b-xl -p-2 bg_sky">
+                <div className="absolute flex flex-col mt-[50px] -ml-6 border border-t-0 rounded-b -p-2 bg_sky">
                   <Link
                     onClick={() => setIsServiceLinkOpen(false)}
                     className="p-2 hover:bg-slate-500 active:bg-slate-700 rounded-xl"
@@ -83,7 +78,7 @@ const Navbar = () => {
             <Link href="/faq">FAQ</Link>{" "}
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact/#contact-form">Contact</Link>
           </li>
         </ul>
       </div>

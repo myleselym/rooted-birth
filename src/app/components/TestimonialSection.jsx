@@ -17,15 +17,14 @@ const TestimonialSection = ({
     >
       <Image
         src={imgSrc}
-        style={{ borderRadius: "10px" }}
         alt={alt}
         height={380}
         width={name === "Alecia H." || name === "Emily H." ? 380 : 290}
         className={`object-contain mb-4 shadow-lg shadow-black/30`}
       />
 
-      <div className="px-2 text-lg lg:w-8/12">
-        <div>{testimonial}</div>
+      <div className="px-2 text-xl lg:w-8/12">
+        <div className="flex flex-col gap-2">{testimonial}</div>
         <br />
         <h3 className="font-bold">{name}</h3>
         <p className="italic">{services}</p>

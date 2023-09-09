@@ -6,6 +6,9 @@
   font-family: Moon;
   src: url(../assets/fonts/Moon2.0-Regular.otf);
 }
+.custom-placeholder::placeholder {
+  @apply text-lg;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -62,4 +65,14 @@
 
 .text_finch {
   color: #58603a;
+}
+
+.moon_font {
+  font-family: "Moon";
+}
+
+button,
+a {
+  font-family: "Moon";
+  word-spacing: -0.3rem;
 }

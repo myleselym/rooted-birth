@@ -12,8 +12,6 @@ import DSImg2 from "/public/ds-img-2.jpeg";
 import DSImg3 from "/public/ds-img-3.jpeg";
 import DSImg4 from "/public/ds-img-4.jpeg";
 
-const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
-
 const topImgSrcs = [DSImg1, DSImg2, DSImg3, DSImg4];
 
 const DoulaSupport = () => {
@@ -28,10 +26,7 @@ const DoulaSupport = () => {
         <div className="w-[85vw] my-8">
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl text-left"
-              >
+              <AccordionTrigger className="moon_font [word-spacing: -.3rem] text-2xl text-left">
                 Full Spectrum Support
               </AccordionTrigger>
               <AccordionContent className="text-lg">
@@ -39,14 +34,12 @@ const DoulaSupport = () => {
                   Ideal for first time parents and those who hope to have a
                   different birthing experience than previous births.
                 </h3>
-                <ul
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} mx-5 list-disc`}
-                >
+                <ul className="flex flex-col gap-1 mx-5 list-disc">
                   <li>
                     3 prenatal sessions to discuss birth plan, postpartum plan,
                     infant feeding goals, childbirth education, labor positions,
-                    coping mechanisms for labor <br />( 1.5-2 hrs each )
+                    coping mechanisms for labor. <br />
+                    &emsp;( 1.5-2 hrs each )
                   </li>
                   <li>On call starting at 38 weeks gestation</li>
                   <li>
@@ -56,17 +49,14 @@ const DoulaSupport = () => {
                   <li>
                     2 postpartum follow up visits around the second, and sixth
                     week postpartum <br />
-                    (1.5-2 hrs each)
+                    &emsp;(1.5-2 hrs each)
                   </li>
                   <li>Detailed birth notes</li>
                   <li>
                     Unlimited text communication up to 3 months postpartum
                   </li>
                 </ul>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg`}
-                >
+                <div className={`text-lg`}>
                   <p className="mt-4">Investment: $1,200</p>
                 </div>
               </AccordionContent>
@@ -74,10 +64,7 @@ const DoulaSupport = () => {
           </Accordion>
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl"
-              >
+              <AccordionTrigger className="moon_font [word-spacing:-.3rem] text-2xl">
                 Labor Support
               </AccordionTrigger>
               <AccordionContent className="text-lg">
@@ -85,10 +72,7 @@ const DoulaSupport = () => {
                   Ideal for experienced parents who know what to expect and what
                   they will need.
                 </h3>
-                <ul
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} mx-5 list-disc`}
-                >
+                <ul className="mx-5 leading-8 list-disc">
                   <li>1 prenatal session to discuss birth plan (1.5-2 hrs)</li>
                   <li>On call starting at 38 weeks gestation</li>
                   <li>
@@ -100,10 +84,7 @@ const DoulaSupport = () => {
                     Unlimited text communication up to 3 months postpartum
                   </li>
                 </ul>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg`}
-                >
+                <div className={` text-lg`}>
                   <p className="mt-4">Investment: $800</p>
                 </div>
               </AccordionContent>
@@ -111,26 +92,17 @@ const DoulaSupport = () => {
           </Accordion>
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl"
-              >
+              <AccordionTrigger className="moon_font [word-spacing:-.3rem] text-2xl">
                 Postpartum Support
               </AccordionTrigger>
               <AccordionContent>
                 <h3 className="my-4 text-xl text-center">
                   Available a la carte or as an add on to any birth package.
                 </h3>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg`}
-                >
+                <div className={`text-lg`}>
                   <p className="font-bold">Daytime Care:</p>
                 </div>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg mx-5`}
-                >
+                <div className={`text-lg mx-5`}>
                   <p className="">
                     I will come into your home to help care for your baby while
                     you do any of the following: rest, eat, shower, journal,
@@ -142,30 +114,21 @@ const DoulaSupport = () => {
                     relevant to you about your body or your baby.
                   </p>
                 </div>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg`}
-                >
+                <div className={` text-lg`}>
                   <p className="my-4">
                     Investment:
                     <br />
-                    Singleton $25/hour
+                    &emsp;Singleton $25/hour
                     <br />
-                    Twins $30/hour
+                    &emsp;Twins $30/hour
                     <br />
-                    (3 hours or more blocks of time.)
+                    &emsp;(3 hours or more blocks of time.)
                   </p>
                 </div>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg`}
-                >
+                <div className={` text-lg`}>
                   <p className="font-bold">Night Care:</p>
                 </div>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg mx-5`}
-                >
+                <div className={` text-lg mx-5`}>
                   <p>
                     I will sleep in your home with your baby so parent(s) can
                     get to bed and actually sleep. For breastfed babies, I will
@@ -177,18 +140,15 @@ const DoulaSupport = () => {
                     applicable), burp, and diaper your baby.
                   </p>
                 </div>
-                <div
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg`}
-                >
+                <div className={` text-lg`}>
                   <p className="mt-4">
                     Investment:
                     <br />
-                    Singleton $250/night
+                    &emsp;Singleton $250/night
                     <br />
-                    Twins $300/night
+                    &emsp;Twins $300/night
                     <br />
-                    (9:30pm - 5:30am)
+                    &emsp;(9:30pm - 5:30am)
                   </p>
                 </div>
               </AccordionContent>
@@ -196,16 +156,11 @@ const DoulaSupport = () => {
           </Accordion>
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl text-left"
-              >
+              <AccordionTrigger className="moon_font [word-spacing: -.3rem] text-2xl text-left">
                 Birth Indentions Development
               </AccordionTrigger>
-              <AccordionContent
-                className={`text-lg ${playfairDisplay.className}`}
-              >
-                <p style={{ wordSpacing: "2px" }} className={`mx-5`}>
+              <AccordionContent className={`text-lg `}>
+                <p className={`mx-5`}>
                   {`There are many choices to make during the pregnancy, labor,
                   birth, and postpartum experience. We'll work together to come
                   up with a comprehensive list of your birth preferences for you
@@ -218,16 +173,11 @@ const DoulaSupport = () => {
           </Accordion>
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl"
-              >
+              <AccordionTrigger className="moon_font [word-spacing:-.3rem] text-2xl">
                 Virtual Support
               </AccordionTrigger>
-              <AccordionContent
-                className={`text-lg ${playfairDisplay.className}`}
-              >
-                <p style={{ wordSpacing: "2px" }} className={`mx-5`}>
+              <AccordionContent className={`text-lg `}>
+                <p className={`mx-5`}>
                   Virtual prenatal, birth support, and postpartum services are
                   available in a wide spectrum of services. Contact Bridget to
                   determine what virtual support can look like for you.
@@ -237,17 +187,11 @@ const DoulaSupport = () => {
           </Accordion>
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl text-left"
-              >
+              <AccordionTrigger className="moon_font [word-spacing: -.3rem] text-2xl text-left">
                 Bereavement Support
               </AccordionTrigger>
               <AccordionContent>
-                <p
-                  style={{ wordSpacing: "2px" }}
-                  className={`${playfairDisplay.className} text-lg mx-5`}
-                >
+                <p className={` text-lg mx-5`}>
                   This is a free service for anyone who has or is expecting to
                   experience infant loss via miscarriage, stillbirth, or a
                   diagnosis which means the baby will not live long after being
@@ -258,16 +202,11 @@ const DoulaSupport = () => {
           </Accordion>
           <Accordion type="single" className="border-b-2" collapsible>
             <AccordionItem value="item-2">
-              <AccordionTrigger
-                style={{ wordSpacing: "-.5rem" }}
-                className="text-2xl text-left"
-              >
+              <AccordionTrigger className="moon_font [word-spacing: -.3rem] text-2xl text-left">
                 Newborn Photography
               </AccordionTrigger>
-              <AccordionContent
-                className={`text-lg ${playfairDisplay.className}`}
-              >
-                <p style={{ wordSpacing: "2px" }} className={`mx-5`}>
+              <AccordionContent className={`text-lg `}>
+                <p className={`mx-5`}>
                   I have a photography hobby and am happy to share this with
                   clients via a fresh-48 or newborn mini-session. Sessions
                   includes to up 10 edited images of your choosing and all

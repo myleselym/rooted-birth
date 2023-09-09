@@ -17,7 +17,7 @@ const testimonials = [
         that we finally decided to consider hiring a doula after realizing we
         wanted more than to just fare “well enough.”`}
       </p>,
-      <br key="break-1" />,
+
       <p key="second">
         {`Ever since our very first meeting, the conversation with Bridget flowed
         so naturally. She made me feel understood, supported and empowered, and
@@ -42,7 +42,7 @@ const testimonials = [
         kind. This lady was awesome. All of my requests are met. I can't begin
         to say how wonderful she was.`}
       </p>,
-      <br key="break-1" />,
+
       <p key="second">
         I was surprised at all of the things she was doing during my labor. She
         was asking questions, holding my hand, encouraged me and telling me that
@@ -50,20 +50,20 @@ const testimonials = [
         then after I had the baby the first thing Bridget did was to offer me
         food. I was like this lady is IT!
       </p>,
-      <br key="break-2" />,
+
       <p key="third">
         One thing that I will always remember is when the pain began to hit me
         she knew I was a believer and asked if she could pray with me. That was
         the fastest I have said yes to anything in my life. She prayed with me
         and that took me by storm. She was so engaging.
       </p>,
-      <br key="break-3" />,
+
       <p key="fourth">
         {`I would recommend anyone who is searching for a doula to connect with
         Bridget. She was loving and just so fun. She is amazing. I love her. She
         even did a mini newborn photoshoot. I couldn't ask for a better doula.`}
       </p>,
-      <br key="break-4" />,
+
       <p key="fifth">
         From me, my husband, and my baby, we love Bridget so much.{" "}
       </p>,
@@ -81,7 +81,7 @@ const testimonials = [
         lot of anxiety during my second pregnancy. I was determined to be more
         empowered and informed for my second birth.
       </p>,
-      <br key="break-1" />,
+
       <p key="second">
         Bridget provided clear, non-judgmental support throughout my pregnancy.
         I never felt like I was being told how to parent or pressured in any way
@@ -93,7 +93,7 @@ const testimonials = [
         less traumatic birth and Bridget was able to provide me with resources
         and tools to do so.
       </p>,
-      <br key="break-2" />,
+
       <p key="third">
         When I was in labor, Bridget was readily available to support me. Her
         support was unwavering and got me through the process of being induced
@@ -119,7 +119,6 @@ const testimonials = [
         support I had from Bridget and her doula partner that I never would have
         gotten as a single mom with out them.
       </p>,
-      <br key="break-1" />,
       <p key="second">
         Thank you for being amazing supporters. I appreciate you both!
       </p>,
@@ -153,7 +152,7 @@ const Testimonials = () => {
         heroTitle="Testimonials"
         font="text-8xl"
       />
-      <section>
+      <section className="flex flex-col gap-2">
         {testimonials.map((testimonialObj, index) => (
           <TestimonialSection
             key={`testimonial-${index}`}

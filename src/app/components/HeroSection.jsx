@@ -18,7 +18,7 @@ const HeroSection = ({ imgSrc, alt, heroTitle, font }) => {
           alt={alt}
         />
         <h1
-          className={`min-[280px]:text-5xl md:text-9xl text-center text_pearl mx-auto self-center`}
+          className={`moon_font min-[280px]:text-5xl md:text-9xl text-center text_pearl mx-auto self-center`}
         >
           {heroTitle}
         </h1>

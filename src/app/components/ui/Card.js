@@ -16,9 +16,6 @@ const Card = ({
       <div className="relative h-[260px] w-[260px]">
         <Image
           className="object-cover shadow-xl shadow-zinc-700"
-          style={{
-            borderRadius: "10px",
-          }}
           src={imgSrc}
           fill
           loading="lazy"
@@ -26,8 +23,12 @@ const Card = ({
         />
       </div>
       <div className="flex flex-wrap items-center justify-center">
-        {title && <h3 className="pt-8 text-3xl">{title}</h3>}
-        <div className={`${title && "text-left"} text-lg leading-7`}>
+        {title && <h3 className="pt-8 pb-2 text-3xl moon_font">{title}</h3>}
+        <div
+          className={`${
+            title && "text-left"
+          } flex flex-col gap-2 text-xl leading-7`}
+        >
           {content}
         </div>
       </div>

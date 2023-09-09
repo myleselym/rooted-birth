@@ -72,7 +72,7 @@ const TestimonialSection = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex !== testimonials.length - 1 ? prevIndex + 1 : 0
       );
-    }, 10000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -90,11 +90,10 @@ const TestimonialSection = () => {
       <div
         className={`relative group w-11/12 max-w-[800px] min-[200px]:h-[650px] sm:h-[540px] m-4`}
       >
-        <div className="flex flex-col items-center h-full p-2 min-[200px]:justify-evenly sm:justify-center bg_finch rounded-2xl">
+        <div className="flex flex-col items-center h-full p-2 min-[200px]:justify-evenly sm:justify-center border-2 border-neutral-600 bg_finch rounded-[.5rem]">
           <div className="relative w-[240px] h-[310px] mb-6">
             <Image
               loading="eager"
-              style={{ borderRadius: "10px" }}
               className="object-cover shadow-2xl shadow-black"
               src={testimonials[currentIndex].imgSrc}
               alt={testimonials[currentIndex].alt}
@@ -102,7 +101,7 @@ const TestimonialSection = () => {
             />
           </div>
 
-          <div className="p-4 text_pearl bg-black/20 rounded-xl">
+          <div className="p-4 rounded text_pearl bg-black/20">
             <p className="italic">
               <Balancer>{testimonials[currentIndex].testimonial}</Balancer>
             </p>
