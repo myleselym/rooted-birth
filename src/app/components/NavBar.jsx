@@ -144,7 +144,10 @@ const Navbar = () => {
                 </Link>{" "}
               </li>
               <li className="w-full hover:bg-slate-500/50">
-                <Link onClick={handleHamburgerLinks} href="/contact">
+                <Link
+                  onClick={handleHamburgerLinks}
+                  href="/contact#contact-form"
+                >
                   Contact
                 </Link>
               </li>
