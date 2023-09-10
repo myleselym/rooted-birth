@@ -17,25 +17,25 @@ const About = () => {
             imgAlt="Bridget Pregnant Black and White"
             title="My Birth Philosophy"
             content={[
-              <p key="first">
-                I believe all people, regardless of beliefs, status, or
-                identities deserve to be supported and valued.
-              </p>,
-              <p key="second">
-                I believe in centering the birthing person at all stages of
-                their pregnancy, labor, birth, and postpartum experience.
-              </p>,
-              <p key="third">
-                I believe in informed consent and informed refusal.
-              </p>,
-              <p key="fourth">
-                I believe birth is a natural process which has a variety of ways
-                to be embraced.
-              </p>,
-              <p key="fifth">
-                I believe birth is as much of a mental experience as a physical
-                one.
-              </p>,
+              <ul key="first" className="grid gap-7">
+                <li>
+                  I believe all people, regardless of beliefs, status, or
+                  identities deserve to be supported and valued.
+                </li>
+                <li>
+                  I believe in centering the birthing person at all stages of
+                  their pregnancy, labor, birth, and postpartum experience.
+                </li>
+                <li>I believe in informed consent and informed refusal.</li>
+                <li>
+                  I believe birth is a natural process which has a variety of
+                  ways to be embraced.
+                </li>
+                <li>
+                  I believe birth is as much of a mental experience as a
+                  physical one.
+                </li>
+              </ul>,
             ]}
           />
           <Card

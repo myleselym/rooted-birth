@@ -15,7 +15,7 @@ const Card = ({
     <div className="flex flex-col p-2 items-center justify-center gap-8 max-w-[400px] min-h-[450px] text-center">
       <div className="relative h-[260px] w-[260px]">
         <Image
-          className="object-cover shadow-xl shadow-zinc-700"
+          className="object-cover shadow-lg shadow-black/50"
           src={imgSrc}
           fill
           loading="lazy"
@@ -27,7 +27,7 @@ const Card = ({
         <div
           className={`${
             title && "text-left"
-          } flex flex-col gap-2 text-xl leading-7`}
+          } flex flex-col gap-2 text-xl leading-8`}
         >
           {content}
         </div>

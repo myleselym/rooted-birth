@@ -19,16 +19,16 @@ export default function Home() {
           width={923}
         />
       </section>
-      <div className="flex flex-col flex-wrap items-center justify-center w-full gap-4 py-4 font-bold text-center bg_sky text_pearl">
+      <div className="flex flex-col flex-wrap items-center justify-center w-full gap-2 py-4 font-bold text-center bg_sky text_pearl">
         <h2
           style={{ wordSpacing: "-.5rem" }}
-          className={`moon_font text-4xl font-bold`}
+          className={`moon_font text-3xl font-bold`}
         >
           Free 30-Minute Consultation
         </h2>
         <Link
           href="/contact#contact-form"
-          className="moon_font w-32 py-2 text-xl font-bold border-2 rounded-xl hover:bg-slate-200 hover:text-[#95a7ae] active:bg-sky-100 active:shadow-md shadow-lg shadow-black/30"
+          className="moon_font p-2 text-lg font-bold border-2 rounded-xl hover:bg-slate-200 hover:text-[#95a7ae] active:bg-sky-100 active:shadow-md shadow-lg shadow-black/30"
         >
           Contact Me
         </Link>

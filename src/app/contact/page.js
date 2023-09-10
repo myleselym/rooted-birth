@@ -14,9 +14,9 @@ const Contact = () => {
         font="text-9xl"
       />
       <div className="pt-8 text-center">
-        <h2 className="text-5xl ">{`Let's Connect`}</h2>
+        <h2 className="text-5xl moon_font">Let&apos;s Connect</h2>
         <p className="mt-4 text-xl">
-          Proudly serving the Dane County, Wisconsin area (in-person) and
+          Proudly serving the Dane County, Wisconsin area in-person and
           virtually nation wide.
         </p>
         <div

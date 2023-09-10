@@ -29,10 +29,25 @@ const BirthEducation = () => {
           <li>Planning for the Unexpected</li>
           <li>Postpartum Prep: Parent and Infant Care</li>
         </ul>
-        <p>Group birth education classes are not currently available.</p>
+        <p>
+          Read
+          <span className="mx-2 text-lg opacity-70 text_finch">
+            <a
+              href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
+              className="hover:text-neutral-500 active:text-neutral-800"
+            >
+              this signature article
+            </a>
+          </span>
+          from Evidence Based Birth to learn more about what a doula does and
+          why they are so valuable.
+        </p>
         <p className="mt-4 text-xl">
           Contact Bridget below to inquire about private birth education
           classes.
+        </p>
+        <p className="text-sm">
+          *Group birth education classes are not currently available.
         </p>
       </section>
     </main>

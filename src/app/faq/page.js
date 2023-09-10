@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/app/components/ui/accordion";
 import { Playfair_Display } from "next/font/google";
+import { Balancer } from "react-wrap-balancer";
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 
 const FAQ = () => {
@@ -25,20 +26,19 @@ const FAQ = () => {
                 What is a doula?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                <p>
-                  A prenatal, birth, and postpartum doula is a professional
-                  trained in birth support. Doulas provide informational,
-                  emotional, and physical support for pregnant, birthing, and
-                  postpartum people and families.
+                <p className="text-xl">
+                  <Balancer>
+                    A prenatal, birth, and postpartum doula is a professional
+                    trained in birth support. Doulas provide informational,
+                    emotional, and physical support for pregnant, birthing, and
+                    postpartum people and families.
+                  </Balancer>
                 </p>
                 <br />
-                <h3 className="text-xl">{`A doula's role is:`}</h3>
-                <ul
-                  style={{ wordSpacing: ".1rem" }}
-                  className={`${playfairDisplay.className} pl-5 list-disc [&>*]:mb-4`}
-                >
+                <h3 className="text-xl font-bold">A doula&apos;s role is:</h3>
+                <ul className="grid gap-2 pl-5 list-disc">
                   <li>
-                    To Care:
+                    <span className="font-bold">To Care</span>:
                     <br />
                     Provide effective and nurturing support which utilizes brain
                     science to meet the needs of the client and establish trust
@@ -46,28 +46,28 @@ const FAQ = () => {
                     present for the birth.
                   </li>
                   <li>
-                    To Comfort:
+                    <span className="font-bold">To Comfort:</span>:
                     <br />
                     Supply knowledge of the physiologic and hormonal birth
                     process, as well as continuous physical, neurological, and
                     emotional support.
                   </li>
                   <li>
-                    To Communicate:
+                    <span className="font-bold">To Communicate:</span>
                     <br />
                     Assist the client in discerning their preferences for birth
                     and postpartum and help the client communicate those
                     preferences to their care team.
                   </li>
                   <li>
-                    To Collaborate:
+                    <span className="font-bold">To Collaborate:</span>
                     <br />
                     Work alongside the birthing person, their support person,
                     and their medical team to maximize positive outcomes as
                     defined by the birthing person.
                   </li>
                   <li>
-                    To Empower:
+                    <span className="font-bold">To Empower:</span>
                     <br />
                     Support the client to be involved in their care decisions as
                     much as the client desires and ensure the client has the
@@ -77,29 +77,27 @@ const FAQ = () => {
                 </ul>
                 <br />
 
-                <h3 className="text-xl">{`A doula's role is not:`}</h3>
-                <ul
-                  style={{ wordSpacing: ".1rem" }}
-                  className={`${playfairDisplay.className} pl-5 list-disc [&>*]:mb-4`}
-                >
+                <h3 className="text-xl font-bold">{`A doula's role is not:`}</h3>
+                <ul className="grid gap-2 pl-5 list-disc">
                   <li>
-                    Medical:
+                    <span className="font-bold">Medical:</span>
                     <br />
-                    {`Doulas do not deliver babies, check vitals, listen to baby's
-                  heart tones, or provide medical advice or diagnosis. All
-                  decisions should be made between the birthing person and their
-                  primary care provider.`}
+                    Doulas do not deliver babies, check vitals, listen to
+                    baby&apos;s heart tones, or provide medical advice or
+                    diagnosis. All decisions should be made between the birthing
+                    person and their primary care provider.
                   </li>
                   <li>
-                    A Replacement:
+                    <span className="font-bold">A Replacement:</span>
                     <br />
-                    {`Doulas do not take the place of the birthing person's partner
-                  or other personal support people they wish to have involved in
-                  their birth. Doulas support and empower the birthing person's
-                  support person to be as involved as they desire.`}
+                    Doulas do not take the place of the birthing person&apos;s
+                    partner or other personal support people they wish to have
+                    involved in their birth. Doulas support and empower the
+                    birthing person&apos;s support person to be as involved as
+                    they desire.
                   </li>
                   <li>
-                    An Advocate:
+                    <span className="font-bold">An Advocate:</span>
                     <br />
                     Doulas do not speak for their clients. Instead doulas create
                     space and provide tools for clients to use their own voice.
@@ -117,22 +115,20 @@ const FAQ = () => {
                 What is the benefit of a doula?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                <p>
+                <p className="text-xl">
                   Read the full{" "}
                   <a
-                    className="underline text_sky hover:text-blue-300 active:text-black/50"
+                    className={`${playfairDisplay.className} [word-spacing:.1rem] text_finch hover:text-neutral-400 active:text-black/50 text-lg`}
                     href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
                   >
                     signature article
                   </a>
                   &nbsp;from Evidence Based Birth about the benefits of having a
-                  doula. In short doulas:
+                  doula. <br />
+                  In short, doulas:
                 </p>
                 <br />
-                <ul
-                  style={{ wordSpacing: ".1rem" }}
-                  className={`${playfairDisplay.className} pl-5 list-disc [&>*]:mb-4`}
-                >
+                <ul className="grid gap-2 pl-5 list-disc">
                   <li>Decrease the risk of cesarean</li>
                   <li>
                     Increase in the likelihood of a spontaneous vaginal birth
@@ -142,7 +138,8 @@ const FAQ = () => {
                   </li>
                   <li>Shorten labor</li>
                   <li>
-                    {`Decrease in the baby’s risk of a low five minute Apgar score`}
+                    Decrease in the baby&apos;s risk of a low five minute Apgar
+                    score
                   </li>
                   <li>
                     Decrease in the risk of being dissatisfied with the birth
@@ -173,7 +170,7 @@ const FAQ = () => {
                 <h4 className="font-bold">How:</h4>
                 <ol
                   style={{ wordSpacing: ".1rem" }}
-                  className={`${playfairDisplay.className} pl-5 list-decimal [&>*]:mb-4`}
+                  className="pl-5 list-decimal [&>*]:mb-4"
                 >
                   <li>
                     <span className="font-bold">Contact a few doulas.</span>
@@ -220,10 +217,7 @@ const FAQ = () => {
                 Is a doula for me?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                <ul
-                  style={{ wordSpacing: ".1rem" }}
-                  className={`${playfairDisplay.className} [&>*]:mb-4`}
-                >
+                <ul className="grid gap-4">
                   <li>
                     <span className="font-bold">Bottom line: Yes!</span>
                     <br />
@@ -294,20 +288,19 @@ const FAQ = () => {
               >
                 What is a backup doula?
               </AccordionTrigger>
-              <AccordionContent
-                style={{ wordSpacing: ".1rem" }}
-                className={`${playfairDisplay.className} text-lg`}
-              >
-                {`Because we can't predict the future and all birthing people
-              deserve to have the high quality support they deserve, all clients
-              who partner with Bridget will also have a backup doula ready to
-              support them. They will meet their backup doula virtually during
-              one of the prenatal visits and would have them join during their
-              labor/birth should an unplanned circumstance arise (ie: illness,
-              family emergency, etc.). If a backup were at a birth, the client,
-              primary doula and the backup doula will work together to determine
-              the best postpartum follow-up plan to assure continuity of
-              support.`}
+              <AccordionContent className="text-lg">
+                <Balancer>
+                  Because we can&apos;t predict the future and all birthing
+                  people deserve to have the high quality support they deserve,
+                  all clients who partner with Bridget will also have a backup
+                  doula ready to support them. They will meet their backup doula
+                  virtually during one of the prenatal visits and would have
+                  them join during their labor/birth should an unplanned
+                  circumstance arise (illness, family emergency, ect.). If a
+                  backup were at a birth, the client, primary doula and the
+                  backup doula will work together to determine the best
+                  postpartum follow-up plan to assure continuity of support.
+                </Balancer>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

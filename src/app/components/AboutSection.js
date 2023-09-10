@@ -12,21 +12,21 @@ const AboutSection = ({ bgColor, textColor, button }) => {
       <Image
         priority
         src={BridgetImg}
-        className="object-contain mb-4 shadow-xl shadow-black/30"
+        className="object-contain shadow-lg max-lg:mb-4 shadow-black/50"
         alt="bridget-field"
         height={380}
         width={290}
       />
-      <div className="min-[280px]:w-11/12 sm:w-[500px] px-2 text-lg flex flex-col gap-4">
-        <h2 className="[word-spacing:-.5rem] text-4xl moon_font">
+      <div className="min-[280px]:w-11/12 sm:w-[500px] px-2 text-lg flex flex-col items-center gap-4">
+        <h2 className="self-start [word-spacing:-.5rem] text-4xl moon_font text_sage">
           Hi, I&apos;m Bridgit!
         </h2>
-        <div className="text-[1.2rem] flex flex-col gap-2">
+        <div className="text-[1.15rem] flex flex-col gap-2">
           <p>
             <Balancer>
-              I am a wife and mother of 3 with my Master&apos;s in Educational
-              Leadership. My core value of hope allows me to approach life with
-              integrity and sustains my passion for justice.
+              I am a wife and mother of 3 with my Master&apos;s in
+              <br /> Educational Leadership. My core value of hope allows me to
+              approach life with integrity and sustains my passion for justice.
             </Balancer>
           </p>
           <p>

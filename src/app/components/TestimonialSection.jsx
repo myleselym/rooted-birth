@@ -23,7 +23,7 @@ const TestimonialSection = ({
         className={`object-contain mb-4 shadow-lg shadow-black/30`}
       />
 
-      <div className="px-2 text-xl lg:w-8/12">
+      <div className="px-2 text-xl w-[90vw] lg:w-8/12">
         <div className="flex flex-col gap-2">{testimonial}</div>
         <br />
         <h3 className="font-bold">{name}</h3>

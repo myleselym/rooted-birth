@@ -1,15 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
-import Balancer from "react-wrap-balancer";
 import Link from "next/link";
 import SashaF from "/public/sasha_f.jpeg";
 import AleciaH from "/public/alecia_h.jpeg";
 import AlexA from "/public/alex_a.jpeg";
 import EmilyH from "/public/emily_h.jpeg";
+import TestimonialCard from "@/app/components/ui/TestimonialCard";
 
 const testimonials = [
   {
@@ -72,45 +71,38 @@ const TestimonialSection = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex !== testimonials.length - 1 ? prevIndex + 1 : 0
       );
-    }, 7000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
 
   return (
-    <div
-      id="carousel-wrapper"
-      className="flex flex-col items-center py-8 justify-d bg_sage"
+    <section
+      id="testimonial-carousel"
+      className="grid py-8 place-items-center bg_sage"
     >
-      <div className="flex items-center justify-center pb-4">
-        <Link href="/testimonials" className="text-5xl text_pearl">
+      <h2 className="flex items-center justify-center">
+        <Link href="/testimonials" className="pb-8 text-5xl text_pearl">
           Testimonials
         </Link>
-      </div>
+      </h2>
       <div
-        className={`relative group w-11/12 max-w-[800px] min-[200px]:h-[650px] sm:h-[540px] m-4`}
+        className={`relative group w-11/12 max-w-[800px] bg-neutral-800/30 p-4 rounded-xl`}
       >
-        <div className="flex flex-col items-center h-full p-2 min-[200px]:justify-evenly sm:justify-center border-2 border-neutral-600 bg_finch rounded-[.5rem]">
-          <div className="relative w-[240px] h-[310px] mb-6">
-            <Image
-              loading="eager"
-              className="object-cover shadow-2xl shadow-black"
-              src={testimonials[currentIndex].imgSrc}
-              alt={testimonials[currentIndex].alt}
-              fill
-            />
-          </div>
-
-          <div className="p-4 rounded text_pearl bg-black/20">
-            <p className="italic">
-              <Balancer>{testimonials[currentIndex].testimonial}</Balancer>
-            </p>
-            <p className="pt-2 pl-4">{`-${testimonials[currentIndex].name}`}</p>
-          </div>
+        <div className="flex flex-col items-center justify-center p-2">
+          {testimonials.map(
+            (testimonial, index) =>
+              index === currentIndex && (
+                <TestimonialCard
+                  key={testimonial.name}
+                  testimonial={testimonial}
+                />
+              )
+          )}
           {/* Left Arrow*/}
           <div
             onClick={prevSlide}
-            className="lg:hidden group-hover:block absolute min-[200px]:top-[685px] min-[400px]:top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer "
+            className="lg:hidden group-hover:block absolute top-[666px] lg:top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xl p-2 text-white cursor-pointer hover:text-neutral-200 active:text-neutral-600 "
           >
             <BsChevronCompactLeft size={30} />
           </div>
@@ -118,7 +110,7 @@ const TestimonialSection = () => {
           {/* Right Arrrow*/}
           <div
             onClick={nextSlide}
-            className="lg:hidden group-hover:block absolute min-[200px]:top-[685px] min-[400px]:top-[50%] translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer "
+            className="lg:hidden group-hover:block absolute top-[666px] lg:top-[50%] translate-x-0 translate-y-[-50%] right-5 text-2xl p-2 text-white cursor-pointer hover:text-neutral-200 active:text-neutral-600 "
           >
             <BsChevronCompactRight size={30} />
           </div>
@@ -139,7 +131,7 @@ const TestimonialSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

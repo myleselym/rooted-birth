@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <link rel="icon" href="/favicon.ico" />
         </head>
         <body
-          className={`margin-0 ${inter.className} bg_pearl [word-spacing:.05rem]`}
+          className={`m-0 ${inter.className} bg_pearl [word-spacing:.05rem]`}
           style={{
             fontFamily: `${playFairDisplay.className}`,
           }}

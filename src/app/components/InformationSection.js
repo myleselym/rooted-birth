@@ -40,17 +40,9 @@ const InformationSection = () => {
           content={
             <p className="">
               <Balancer>
-                Read &nbsp;
-                <span>
-                  <a
-                    href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
-                    className={`${playfairDisplay.className} text-lg [word-spacing:.08rem] opacity-70 text_finch hover:text-neutral-100 active:text-black/50`}
-                  >
-                    this signature article
-                  </a>
-                </span>
-                &nbsp; from <br /> Evidence Based Birth <br /> to learn more
-                about what a doula does and why they are so valuable.
+                Learn about our five-part evidence-based birth education series
+                which will prepare you and your partner to cope with labor and
+                early postpartum.
               </Balancer>
             </p>
           }

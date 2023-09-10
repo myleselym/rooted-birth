@@ -63,7 +63,7 @@ const ContactForm = () => {
       </h3>
       <p className="text-xl">
         <Balancer>
-          (Text is Bridget&apos;s fastest mode of comunication.)
+          Text is Bridget&apos;s fastest mode of comunication.
         </Balancer>
       </p>
       <div className="flex items-center gap-20 my-4 ">

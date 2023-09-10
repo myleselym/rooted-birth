@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className="min-[200px]:hidden lg:block [&>*]:cursor-pointer">
+      <div className="hidden lg:block [&>*]:cursor-pointer">
         <ul className="flex gap-4">
           <li>
             <Link href="/">Home</Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="min-[200px]:block lg:hidden">
+      <div className="lg:hidden">
         <MdMenu
           className="text-4xl border rounded-[5px]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
