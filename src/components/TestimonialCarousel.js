@@ -8,7 +8,7 @@ import SashaF from "/public/sasha_f.jpeg";
 import AleciaH from "/public/alecia_h.jpeg";
 import AlexA from "/public/alex_a.jpeg";
 import EmilyH from "/public/emily_h.jpeg";
-import TestimonialCard from "@/app/components/ui/TestimonialCard";
+import TestimonialCard from "@/components/ui/TestimonialCard";
 
 const testimonials = [
   {

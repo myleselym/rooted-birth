@@ -1,10 +1,10 @@
-import HeroSection from "@/app/components/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/ui/accordion";
+} from "@/components/ui/accordion";
 import { Playfair_Display } from "next/font/google";
 import { Balancer } from "react-wrap-balancer";
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });

@@ -1,5 +1,5 @@
-import HeroSection from "@/app/components/HeroSection";
-import TestimonialSection from "@/app/components/TestimonialSection";
+import HeroSection from "@/components/HeroSection";
+import TestimonialSection from "@/components/TestimonialSection";
 
 const testimonials = [
   {
@@ -9,24 +9,24 @@ const testimonials = [
     name: "Alecia H.",
     testimonial: [
       <p key="first">
-        {`As a second time laboring mom who didn’t use a doula for her first
+        As a second time laboring mom who didn&apos;t use a doula for her first
         birth, my husband and I were both skeptical on the benefits of having
         one for the birth of our second baby. We had a relatively positive birth
         experience after our first was born and we both felt we could fare well
-        enough to make it through our second. It wasn’t until I was 32 weeks
-        that we finally decided to consider hiring a doula after realizing we
-        wanted more than to just fare “well enough.”`}
+        enough to make it through our second. It wasn&apos;t until I was 32
+        weeks that we finally decided to consider hiring a doula after realizing
+        we wanted more than to just fare “well enough.”
       </p>,
 
       <p key="second">
-        {`Ever since our very first meeting, the conversation with Bridget flowed
+        `Ever since our very first meeting, the conversation with Bridget flowed
         so naturally. She made me feel understood, supported and empowered, and
         it was those characteristics that I wanted my birth experience to
         embody. Bridget was a perfect fit for us and for what we envisioned our
         birth would be. She supported us in just the way we needed to be
         supported and she will forever hold a special place in our hearts. We
-        wouldn’t have wanted to share such intimate and raw moments with anyone
-        else!`}
+        wouldn&apos;t have wanted to share such intimate and raw moments with
+        anyone else!
       </p>,
     ],
     services: "Full Spectrum Support",
@@ -38,9 +38,9 @@ const testimonials = [
     name: "Sasha F.",
     testimonial: [
       <p key="first">
-        {`10/10. I would give Bridget a thousand if there is any rating of that
-        kind. This lady was awesome. All of my requests are met. I can't begin
-        to say how wonderful she was.`}
+        10/10. I would give Bridget a thousand if there is any rating of that
+        kind. This lady was awesome. All of my requests are met. I can&apos;t
+        begin to say how wonderful she was.
       </p>,
 
       <p key="second">
@@ -59,13 +59,14 @@ const testimonials = [
       </p>,
 
       <p key="fourth">
-        {`I would recommend anyone who is searching for a doula to connect with
+        I would recommend anyone who is searching for a doula to connect with
         Bridget. She was loving and just so fun. She is amazing. I love her. She
-        even did a mini newborn photoshoot. I couldn't ask for a better doula.`}
+        even did a mini newborn photoshoot. I couldn&apos;t ask for a better
+        doula.
       </p>,
 
       <p key="fifth">
-        From me, my husband, and my baby, we love Bridget so much.{" "}
+        From me, my husband, and my baby, we love Bridget so much.
       </p>,
     ],
     services: "Birth Support & Newborn Photos",

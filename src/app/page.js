@@ -1,8 +1,8 @@
-import HeroSection from "@/app/components/HeroSection";
-import InformationSection from "@/app/components/InformationSection";
+import HeroSection from "@/components/HeroSection";
+import InformationSection from "@/components/InformationSection";
 import Link from "next/link";
-import AboutSection from "@/app/components/AboutSection";
-import TestimonialCarousel from "@/app/components/TestimonialCarousel";
+import AboutSection from "@/components/AboutSection";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import HeroImg from "/public/RootedBanner.jpg";
 import Image from "next/image";
 

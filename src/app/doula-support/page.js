@@ -1,11 +1,11 @@
-import HeroSection from "@/app/components/HeroSection";
-import ImageSection from "@/app/components/ImageSection";
+import HeroSection from "@/components/HeroSection";
+import ImageSection from "@/components/ImageSection";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/ui/accordion";
+} from "@/components/ui/accordion";
 import { Playfair_Display } from "next/font/google";
 import DSImg1 from "/public/ds-img-1.jpeg";
 import DSImg2 from "/public/ds-img-2.jpeg";

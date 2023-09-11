@@ -1,8 +1,8 @@
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
-import Footer from "@/app/components/Footer";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const playFairDisplay = Playfair_Display({ subsets: ["latin"] });
