@@ -9,7 +9,7 @@ const BirthEducation = () => {
         alt="Holding Hands"
         heroTitle="Birth Education"
       />
-      <section className="flex flex-col text-lg mx-auto w-[80vw] py-8">
+      <section className="text_sky flex flex-col text-lg mx-auto w-[80vw] py-8">
         <h2 className="text-2xl moon_font [word-spacing:-.3rem]">
           Birth is variable.
         </h2>
@@ -33,8 +33,9 @@ const BirthEducation = () => {
           Read
           <span className="mx-2 text-lg opacity-70 text_finch">
             <a
+              id="ed-link"
               href="https://evidencebasedbirth.com/the-evidence-for-doulas/"
-              className="hover:text-neutral-500 active:text-neutral-800"
+              className="hover:text-neutral-500 active:text-neutral-800 [word-spacing:.1rem]"
             >
               this signature article
             </a>
