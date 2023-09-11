@@ -66,18 +66,14 @@ const ContactForm = () => {
           Text is Bridget&apos;s fastest mode of comunication.
         </Balancer>
       </p>
-      <div className="flex items-center gap-20 my-4 ">
-        <span className="flex items-center text-2xl">
-          <BsFillTelephoneFill className="text_finch" />
-          &ensp;
-          <a
-            className={`${playfairDisplay.className} mr-4 active:text-slate-300 hover:text-slate-100`}
-            href="tel:+6086181311"
-          >
-            (608) 618-1311
-          </a>
-        </span>
-      </div>
+
+      <a
+        className={`${playfairDisplay.className} flex gap-2 justify-center text_finch items-center text-2xl py-4 active:text-gray-500 hover:text-neutral-300`}
+        href="tel:+6086181311"
+      >
+        <BsFillTelephoneFill /> (608) 618-1311
+      </a>
+
       <form
         onSubmit={handleSubmit}
         className=" flex flex-col gap-4 w-full px-2 [&>*]:bg-[#f0efee] [&>*]:border-2 [&>*]:rounded-xl [&>*]:p-4 p-4 text-black"

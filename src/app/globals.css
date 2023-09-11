@@ -33,6 +33,18 @@ a {
   word-spacing: -0.3rem;
 }
 
+#instagram-icon {
+  color: #f0efee;
+}
+
+#instagram-icon:hover {
+  color: #58603a;
+}
+
+#instagram-icon:active {
+  color: #666769;
+}
+
 .bg_finch {
   background-color: #58603a;
 }

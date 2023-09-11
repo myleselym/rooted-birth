@@ -6,7 +6,9 @@ const Footer = () => {
       <ContactForm />
       <div className="pb-4 text-center">
         <SocialIcon
-          bgColor="#58603a"
+          id="instagram-icon"
+          bgColor="currentColor"
+          fgColor="#95a7ae"
           style={{ height: "2.5rem", width: "2.5rem" }}
           url="https://instagram.com/rooted.birth/"
         />
