@@ -1,6 +1,5 @@
-import HeroSection from "@/app/components/HeroSection";
-import Card from "@/app/components/ui/Card";
-import React from "react";
+import HeroSection from "@/components/HeroSection";
+import Card from "@/components/ui/Card";
 
 const About = () => {
   return (
