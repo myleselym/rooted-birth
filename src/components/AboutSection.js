@@ -9,19 +9,19 @@ const AboutSection = ({ bgColor, textColor, button }) => {
         (bgColor, textColor)
       }`}
     >
-      <Image
-        priority
-        src={BridgetImg}
-        className="object-contain shadow-lg max-lg:mb-4 shadow-black/50"
-        alt="bridget-field"
-        height={380}
-        width={290}
-      />
-      <div className="min-[280px]:w-11/12 sm:w-[500px] px-2 text-lg flex flex-col items-center gap-4">
-        <h2 className="self-start [word-spacing:-.5rem] text-4xl moon_font text_sage">
-          Hi, I&apos;m Bridgit!
-        </h2>
+      <div className="h-[20rem] w-[18rem]">
+        <Image
+          priority
+          src={BridgetImg}
+          className="object-contain shadow-lg shadow-black/50"
+          alt="bridget-field"
+        />
+      </div>
+      <div className="min-[280px]:w-3/4 sm:w-[500px] px-2 text-lg flex flex-col items-center gap-4">
         <div className="text-[1.15rem] flex flex-col gap-2">
+          <h2 className="self-start [word-spacing:-.5rem] text-4xl moon_font text_sage">
+            Hi, I&apos;m Bridgit!
+          </h2>
           <p>
             <Balancer>
               I am a wife and mother of 3 with my Master&apos;s in
@@ -42,7 +42,7 @@ const AboutSection = ({ bgColor, textColor, button }) => {
         {button && (
           <Link
             href="/about"
-            className="moon_font self-center p-2 border rounded-[10px] mt-auto bg_sage text_pearl border-gray-400 hover:bg-slate-200 hover:text-[#95a7ae] active:bg-sky-100 active:shadow-md shadow-lg shadow-black/30"
+            className="moon_font self-center p-2 rounded-[10px] mt-auto bg_sage text_pearl border-gray-400 hover:bg-slate-200 hover:text-[#95a7ae] active:bg-sky-100 active:shadow-md shadow-lg shadow-black/30"
           >
             Learn More
           </Link>

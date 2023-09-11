@@ -17,7 +17,7 @@ const InformationSection = () => {
           Supporting all families and birth preferences in all locations.
         </p>
       </div>
-      <div className="relative flex flex-wrap items-stretch justify-center w-full gap-10">
+      <div className="relative flex flex-wrap items-stretch justify-center w-full gap-20">
         <Card
           imgSrc={DoulaSupportImg}
           imgAlt="Doula Img"
@@ -38,7 +38,7 @@ const InformationSection = () => {
           imgSrc={BirthEducationImg}
           imgAlt="Baby in hands"
           content={
-            <p className="">
+            <p className=" w-[18rem]">
               <Balancer>
                 Learn about our five-part evidence-based birth education series
                 which will prepare you and your partner to cope with labor and

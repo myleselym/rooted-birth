@@ -56,12 +56,12 @@ const ContactForm = () => {
       >
         Contact Me
       </h2>
-      <h3 className="p-4 text-2xl">
+      <h3 className="p-4 text-xl">
         <Balancer>
           Call, text, or send a message below for a free consultation.
         </Balancer>
       </h3>
-      <p className="text-xl">
+      <p className="text-lg">
         <Balancer>
           Text is Bridget&apos;s fastest mode of comunication.
         </Balancer>

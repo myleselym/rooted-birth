@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
-
 @font-face {
   font-family: Moon;
   src: url(../assets/fonts/Moon2.0-Regular.otf);
@@ -27,11 +25,6 @@
 ::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 5px;
-}
-
-body,
-#ed-link {
-  font-family: "Playfair Display", serif;
 }
 
 button,

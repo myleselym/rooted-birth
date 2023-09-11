@@ -89,7 +89,7 @@ const TestimonialSection = () => {
       <div
         className={`relative group w-11/12 max-w-[800px] bg-neutral-800/30 p-4 rounded-xl`}
       >
-        <div className="flex flex-col items-center justify-center p-2">
+        <div className="flex flex-col items-center justify-center">
           {testimonials.map(
             (testimonial, index) =>
               index === currentIndex && (
@@ -116,7 +116,7 @@ const TestimonialSection = () => {
           </div>
         </div>
       </div>
-      <div className={"flex top-4 justify-center py-2"}>
+      <div className={"flex top-4 justify-center items-center mt-6"}>
         {testimonials.map((testimonial, index) => (
           <div
             key={`dot-${index}`}

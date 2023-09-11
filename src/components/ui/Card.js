@@ -35,7 +35,7 @@ const Card = ({
       {button && (
         <Link
           href={buttonHref}
-          className="p-2 border rounded-[10px] mt-auto hover:bg-slate-200 hover:text-[#95a7ae] active:bg-sky-100 active:shadow-md shadow-lg shadow-black/30"
+          className="p-2 border-2 rounded-[10px] mt-auto hover:bg-slate-200 hover:text-[#95a7ae] active:bg-sky-100 active:shadow-md shadow-lg shadow-black/30"
         >
           {buttonText}
         </Link>

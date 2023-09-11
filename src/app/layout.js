@@ -1,11 +1,9 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
-const playFairDisplay = Playfair_Display({ subsets: ["latin"] });
+const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 export const metadata = {
   title: "Rooted Birth Services",
   description:
@@ -20,10 +18,7 @@ export default function RootLayout({ children }) {
           <link rel="icon" href="/favicon.ico" />
         </head>
         <body
-          className={`m-0 ${inter.className} bg_pearl [word-spacing:.05rem]`}
-          style={{
-            fontFamily: `${playFairDisplay.className}`,
-          }}
+          className={`m-0 ${playfairDisplay.className} bg_pearl [word-spacing:.05rem]`}
         >
           <NavBar />
           {children}
